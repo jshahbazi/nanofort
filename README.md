@@ -20,7 +20,9 @@ Usage
 
 To use in a Fortran 2003 program, put this at the top of your program:
 
+```Fortran
 use iso_c_binding
 use nanomsg
+```
 
 Because this uses iso_c_binding, the function calls are as similar to the C calls as possible.  As such, you'll need to declare C type variables (exempli gratia: integer(c_int), type(c_ptr)).  To use Fortran type variables with C pointers, you'll have to use the c_loc() function.
