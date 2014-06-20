@@ -1,4 +1,11 @@
 module nanomsg_types
+    !Fortran bindings for the nanomsg v0.4 sockets library (https://github.com/nanomsg/nanomsg)
+    !
+    !MIT License (MIT)
+    !See LICENSE file for more details    
+    !Copyright (c) 2014 John N. Shahbazian
+    !https://github.com/jshahbazi/nanofort
+    
     use iso_c_binding
     
     type, bind(c) :: nn_iovec

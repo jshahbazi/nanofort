@@ -1,5 +1,12 @@
 module nanomsg
+    !Fortran bindings for the nanomsg v0.4 sockets library (https://github.com/nanomsg/nanomsg)
+    !
+    !MIT License (MIT)
+    !See LICENSE file for more details    
+    !Copyright (c) 2014 John N. Shahbazian
+    !https://github.com/jshahbazi/nanofort
 
+    use nanomsg_enums    
     
     interface
         !per http://nanomsg.org/v0.4/nanomsg.7.html
@@ -44,9 +51,7 @@ module nanomsg
             integer(c_int), value, intent(in) :: domain 
             integer(c_int), value, intent(in) :: protocol
         end function nn_socket
-        
-        
-        
+            
         !nn_close - close an SP socket
         !DESCRIPTION
         !    Closes the socket s. Any buffered inbound messages that were not yet received by the application will be discarded. The library will try to deliver any outstanding outbound messages for the time specified by NN_LINGER socket option. The call will block in the meantime.
