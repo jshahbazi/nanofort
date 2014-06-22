@@ -1,10 +1,11 @@
 module nanomsg_enums
     !Fortran bindings for the nanomsg v0.4 sockets library (https://github.com/nanomsg/nanomsg)
+    !"nanomsg" is licensed under MIT/X11 license and is a trademark of 250bpm s.r.o.
     !
-    !MIT License (MIT)
+    !nanofort bindings for nanomsg - MIT License (MIT)
     !See LICENSE file for more details    
     !Copyright (c) 2014 John N. Shahbazian
-    !https://github.com/jshahbazi/nanofort    
+    !https://github.com/jshahbazi/nanofort  
     
     
 !############################################################################
@@ -32,6 +33,9 @@ enumerator :: NN_IPC = -2
 
 !----------------------------------------------------------------------------
 !  nn.h    
+
+enumerator :: NN_MSG = -1
+
     
 !  Errors:
 !  A number random enough not to collide with different errno ranges on      

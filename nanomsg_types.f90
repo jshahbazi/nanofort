@@ -1,7 +1,8 @@
 module nanomsg_types
     !Fortran bindings for the nanomsg v0.4 sockets library (https://github.com/nanomsg/nanomsg)
+    !"nanomsg" is licensed under MIT/X11 license and is a trademark of 250bpm s.r.o.
     !
-    !MIT License (MIT)
+    !nanofort bindings for nanomsg - MIT License (MIT)
     !See LICENSE file for more details    
     !Copyright (c) 2014 John N. Shahbazian
     !https://github.com/jshahbazi/nanofort
@@ -14,7 +15,9 @@ module nanomsg_types
     end type nn_iovec
     
     type, bind(c) :: nn_msghdr
-        type(nn_iovec) :: msg_iov
+        type(c_ptr) :: msg_iov          !documentation says this is of type struct nn_iovec *, so
+                                        !it needs to be a c_ptr that uses c_loc() to point to a 
+                                        !type(nn_iovec) variable
         integer(c_int) :: msg_iovlen
         type(c_ptr) :: msg_control
         integer(c_size_t) :: msg_controllen
