@@ -26,3 +26,9 @@ use nanomsg
 ```
 
 Because this uses iso_c_binding, the function calls are as similar to the C calls as possible.  As such, you'll need to declare C type variables (exempli gratia: _integer(c_int)_, _type(c_ptr)_).  To use Fortran type variables with C pointers, you'll have to use the _c_loc()_ function.
+
+
+ToDo
+----
+
+The ```nn_symbol(...)``` function isn't currently implemented.  Having some trouble with getting it properly working on the Fortran side.
