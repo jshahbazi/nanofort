@@ -1,4 +1,5 @@
 Debug/*.*
+Release/*.*
 nanofort.f90
 nanofort.u2d
 nanofort.vfproj
