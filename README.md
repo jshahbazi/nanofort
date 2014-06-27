@@ -9,11 +9,10 @@ Requires Fortran 2003 and the iso_c_binding module.
 Installation
 ------------
 
-	1. Copy the nanomsg*.f90 files to your source directory
-	2. Download the latest version of nanomsg and compile it for your system
-	3. Include the compiled nanomsg library (nanomsg.lib) in your project
-	4. Copy the nanomsg.dll to your binary directory.  Your program will need it to run.
-
+	1. Download the latest version of nanomsg and compile it for your system.
+	2. Include the compiled nanomsg library (nanomsg.lib) in your project.
+	3. Copy the nanomsg.dll to your binary directory.  Your program will need it to run.
+	4. Copy the nanomsg*.f90 bindings files to your source directory.
 
 Usage
 -----
