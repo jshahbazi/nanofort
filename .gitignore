@@ -1,6 +1,7 @@
 Debug/*.*
 Release/*.*
-nanofort.f90
-nanofort.u2d
-nanofort.vfproj
-nanomsg.dll
+obj/*.*
+*.mod
+*.o
+*.cbp
+*.depend
