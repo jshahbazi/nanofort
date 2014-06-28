@@ -6,3 +6,4 @@ obj/*.*
 *.cbp
 *.depend
 *.vfproj
+nanofort.layout
