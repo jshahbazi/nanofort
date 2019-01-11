@@ -1,7 +1,7 @@
 nanofort
 ========
 
-Fortran bindings for the [nanomsg] (http://nanomsg.org) sockets library.
+Fortran bindings for the [nanomsg](http://nanomsg.org) sockets library.
 
 Requires Fortran 2003 and the iso_c_binding module.
 
