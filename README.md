@@ -24,7 +24,7 @@ use iso_c_binding
 use nanomsg
 ```
 
-Because this uses iso_c_binding, the function calls are as similar to the C calls as possible.  As such, you'll need to declare C type variables (exempli gratia: _integer(c_int)_, _type(c_ptr)_).  To use Fortran type variables with C pointers, you'll have to use the _c_loc()_ function.
+Because this uses iso_c_binding, the function calls are as similar to the C calls as possible.  As such, you'll need to declare C type variables (i.e. _integer(c_int)_, _type(c_ptr)_).  To use Fortran type variables with C pointers, you'll have to use the _c_loc()_ function.
 
 
 ToDo
